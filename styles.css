@@ -1,0 +1,131 @@
+body {
+    background-color: #f1c6c6;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}input,
+select,
+button {
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+    margin-bottom: 8px; /* Espaciado inferior entre elementos */
+}
+
+#result {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2e2b2b;
+    margin-top: 20px;
+    white-space: nowrap; /* Evitar el salto de línea */
+    word-wrap: normal; /* Evitar el salto de palabra */
+}
+
+
+/* Paleta de Colores */
+:root {
+    --primary-color: #16A2FA; 
+    --secondary-color: #1411FF; 
+    --background-color: #497ffc78; 
+    --text-color: #497FFC;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+
+#conversionResult {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5AFACF;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #result,
+    #conversionResult {
+        font-size: 1.4em;
+        margin-top: 15px;
+    }
+
+    .col-md-6.offset-md-3 {
+        text-align: center;
+    }
+
+    #conversion {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    #result,
+    #conversionResult {
+        font-size: 0.8em;
+        margin-top: 15px;
+    }
+
+    .col-md-6.offset-md-3 {
+        text-align: center;
+    }
+
+    #conversion {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .col-md-6.offset-md-3 {
+        text-align: left;
+    }
+
+    #conversion {
+        text-align: left;
+    }
+}
